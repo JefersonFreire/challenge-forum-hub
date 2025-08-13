@@ -33,7 +33,7 @@ public class UsuarioController {
 
     @PostMapping("/cadastrar")
     @Transactional
-    public ResponseEntity cadastrarUsuario(@RequestBody @Valid DadosCadastroUsuario dados, UriComponentsBuilder uriBuilder) {
+    public ResponseEntity cadastrar(@RequestBody @Valid DadosCadastroUsuario dados, UriComponentsBuilder uriBuilder) {
 
         var perfil = new Perfil();
         perfil.setNome(dados.nome());

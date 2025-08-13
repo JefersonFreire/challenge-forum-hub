@@ -5,10 +5,8 @@ import br.com.jeferson.ForumHub.domain.curso.CursoRepository;
 import br.com.jeferson.ForumHub.domain.usuario.Usuario;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.Optional;
 
@@ -75,6 +73,5 @@ public class TopicoService {
         }
         return topico;
     }
-
 }
 
